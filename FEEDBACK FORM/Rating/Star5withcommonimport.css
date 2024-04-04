@@ -1,0 +1,94 @@
+﻿@import url('RatingCommon.css');
+
+.star-ratingword {
+    display: flex;
+    align-items: center;
+    width: 390px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 5px auto;
+    position: relative;
+    margin-bottom: 0.5%;
+}
+    /* hide the inputs */
+    .star-ratingword input {
+        display: none;
+    }
+    /* set properties of all labels */
+    .star-ratingword > label {
+        width: 30px;
+        height: 30px;
+        font-family: Arial;
+        font-size: 75px;
+        -webkit-transition: 0.2s ease;
+        transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+    }
+    /* give label a hover state */
+    .star-ratingword label:hover {
+        transition: 0.2s ease;
+        -webkit-transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+    }
+
+.star-ratingwordLabel {
+    display: flex;
+    align-items: center;
+    width: 390px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 12px auto;
+    position: relative;
+    margin-top: 1.5%;
+}
+
+    .star-ratingwordLabel > label {
+        width: 30px;
+        height: 30px;
+        font-family: Arial;
+        font-size: 20px;
+        transition: 0.2s ease;
+        -webkit-transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        /*margin-left: 4%;*/
+    }
+
+.star-ratingword label:active::before {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.star-ratingword label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+
+.star-ratingword input:checked ~ label:before {
+    content: '\2605';
+}
+
+.Excellent {
+    margin-right: 3%;
+}
+
+.VeryGood {
+    margin-left: 0%;
+    padding-right: 5%;
+}
+
+.Good {
+    padding-left: 2%;
+    margin-left: 3%;
+}
+
+.Average {
+    margin-left: -4%;
+}
+
+.Poor {
+    margin-left: 2%;
+}

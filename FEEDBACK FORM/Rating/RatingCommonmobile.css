@@ -1,0 +1,180 @@
+﻿/*Input tag hover animation change and style*/
+
+input.star-5:hover ~ label.star:before {
+    color: #3be65d;
+    content: '\2605';    
+}
+
+input.star-5:hover ~ label.star:after {
+    color: #3be65d;
+}
+
+input.star-4:hover ~ label.star:before {
+    content: '\2605';
+    color: #8bff18;
+}
+
+input.star-4:hover ~ label.star:after {
+    color: #8bff18;
+}
+
+input.star-3:hover ~ label.star:before {
+    content: '\2605';
+    color: #ffe622;
+}
+
+input.star-3:hover ~ label.star:after {
+    color: #ffe622;
+}
+
+input.star-2:hover ~ label.star:before {
+    content: '\2605';
+    color: #ff6622;
+}
+
+input.star-2:hover ~ label.star:after {
+    color: #ff6622;
+}
+
+input.star-1:hover ~ label.star:before {
+    content: '\2605';
+    color: #ff0000;
+}
+
+input.star-1:hover ~ label.star:after {
+    color: #ff0000;
+}
+
+input.star-0:hover ~ label.star:before {
+    content: '\2606';
+    color: #007cf0;
+}
+
+input.star-0:hover ~ label.star:after {
+    color: #f8f8f8;
+}
+
+/*Input tag after checked*/
+
+input.star:checked ~ label.star:before {
+    content: '\2605';
+    color: #FD4;
+}
+
+input.star-5:checked ~ label.star:before {
+    color: #3be65d;
+    content: '\2605';
+}
+
+input.star-4:checked ~ label.star:before {
+    color: #8bff18;
+    content: '\2605';
+}
+
+input.star-3:checked ~ label.star:before {
+    color: #ffe622;
+    content: '\2605';
+}
+
+input.star-2:checked ~ label.star:before {
+    color: #ff6622;
+    content: '\2605';
+}
+
+input.star-1:checked ~ label.star:before {
+    color: #ff0000;
+    content: '\2605';
+}
+
+input.star-0:checked ~ label.star:before {
+    color: #007cf0;
+    content: '\2605';
+}
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, if it's not present, don't show loader */
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(logoSN.gif) center no-repeat #fff;
+    background-size: 125px 125px;
+}
+
+.MasterLockOn {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    width: 105%;
+    height: 180%;
+    background-color: white;
+    vertical-align: bottom;
+    padding-top: 20%;
+    filter: alpha(opacity=75);
+    opacity: 0.75;
+    font-size: large;
+    color: blue;
+    font-style: italic;
+    font-weight: 400;
+    background-image: url(logoSN.gif);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-Y: hidden;
+}
+
+.loadernew {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modalBackground {
+    background-color: Gray;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    z-index: 10000;
+}

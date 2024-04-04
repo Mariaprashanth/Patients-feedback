@@ -1,0 +1,106 @@
+﻿@import url('RatingCommonmobile.css');
+
+.star-rating10 {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /*margin: 5px 15px;*/
+    position: relative;
+    margin-bottom: 0.5%;
+}
+    /* hide the inputs */
+    .star-rating10 input {
+        display: none;
+    }
+    /* set properties of all labels */
+    .star-rating10 > label {
+        width: 30px;
+        height: 30px;
+        font-family: Arial;
+        font-size: 35px;
+    }
+    /* give label a hover state */
+    .star-rating10 label:hover {
+    }
+
+.star-rating10label {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /*margin: 12px 15px;*/
+    position: relative;
+    margin-top: 0.5%;
+}
+
+    .star-rating10label > label {
+        width: 30px;
+        height: 30px;
+        font-family: Arial;
+        font-size: 14px;
+    }
+
+.star-rating10 label:active::before {
+
+}
+
+.star-rating10 label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+
+.star-rating10 input:checked ~ label:before {
+    content: '\2605';
+}
+
+@-moz-document url-prefix() {
+    .star-rating10 input:checked ~ label:before {
+        font-size: 36px;
+        line-height: 21px;
+    }
+}
+
+.star10 {
+    padding-left: 2.5%;
+}
+
+.star9 {
+    padding-left: 3.5%;
+}
+
+.star8 {
+    padding-left: 3.5%;
+}
+
+.star7 {
+    padding-left: 3.5%;
+}
+
+.star6 {
+    padding-left: 3.5%;
+}
+
+.star5 {
+    padding-left: 3.5%;
+}
+
+.star4 {
+    padding-left: 3.5%;
+}
+
+.star3 {
+    padding-left: 3.5%;
+}
+
+.star2 {
+    padding-left: 3.5%;
+}
+
+.star1 {
+    padding-left: 3.5%;
+}

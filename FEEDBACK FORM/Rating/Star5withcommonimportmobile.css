@@ -1,0 +1,83 @@
+﻿@import url('RatingCommonmobile.css');
+
+.star-ratingword {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /*margin: 5px 15px;*/
+    position: relative;
+    margin-bottom: 0.5%;
+}
+    /* hide the inputs */
+    .star-ratingword input {
+        display: none;
+    }
+    /* set properties of all labels */
+    .star-ratingword > label {
+        width: 30px;
+        height: 30px;
+        font-family: Arial;
+        font-size: 55px;
+    }
+    /* give label a hover state */
+    .star-ratingword label:hover {
+        
+    }
+
+.star-ratingwordLabel {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /*margin: 0px 15px;*/
+    position: relative;
+    margin-top: 1.5%;
+}
+
+    .star-ratingwordLabel > label {
+        width: 30px;
+        height: 30px;
+        font-family: Arial;
+        font-size: 12px;
+        /*margin-left: 4%;*/
+    }
+
+.star-ratingword label:active::before {
+
+}
+
+.star-ratingword label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+}
+
+.star-ratingword input:checked ~ label:before {
+    content: '\2605';
+}
+
+.Excellent {
+    margin-right: 1%;
+}
+
+.VeryGood {
+    margin-left: 2%;
+    /*padding-right: 5%;*/
+}
+
+.Good {
+    padding-left: 1%;
+    margin-left: 3%;
+}
+
+.Average {
+    margin-left: -1%;
+}
+
+.Poor {
+    margin-left: 3%;
+}

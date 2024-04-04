@@ -1,0 +1,153 @@
+﻿.box {
+	width: 500px;
+}
+
+
+
+
+.ratingNA {
+	/*position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 10px;
+	border: 1px solid #000;*/
+	box-sizing: border-box;
+}
+
+/*.ratinglabelNA {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+	.ratinglabelNA label {
+		display: block;
+		cursor: pointer;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		transition: 0.5s;
+		background: #fff;
+		color: #000;
+		font-size: 20px;
+		margin-bottom: 0%;
+	}*/
+
+/*.ratinglabel {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 10px;
+	box-sizing: border-box;
+}*/
+
+	/*.ratinglabel label {
+		display: block;
+		cursor: pointer;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		transition: 0.5s;
+		background: #fff;
+		color: #000;
+		font-size: 16px;
+		margin-bottom: 0%;
+	}*/
+
+/*.Makeitend {
+	justify-content: flex-end;
+}*/
+
+/*.rating input {
+	display: none;
+}*/
+
+.ratingNA input {
+	display: none;
+}
+
+.bordercheck {
+	border-right: none !important;
+}
+
+.rating label {
+	display: block;
+	cursor: pointer;
+	width: 50px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	background: #fff;
+	color: #000;
+	font-size: 20px;
+	border-right: 1px solid #000;
+	margin-bottom: 0%;
+}
+
+.ratingNA label {
+	display: block;
+	cursor: pointer;
+	/*width: 50px;*/
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*transition: 0.5s;*/
+	background: #fff;
+	color: #000;
+	font-size: 20px;
+	border: 1px solid #000;
+	/*margin-bottom: 0%;*/
+}
+
+.NACHANGE {
+	padding-left: 1px;
+	position: relative;
+}
+
+.rating input[type="radio"]:hover ~ label, .rating input[type="radio"]:checked ~ label {
+	background: transparent;
+}
+
+.rating input[type="checkbox"]:hover ~ label, .rating input[type="checkbox"]:checked ~ label {
+	background: transparent;
+}
+
+.ratingNA input[id="RATINGVALUESSFCNA"]:checked ~ label, .NACHANGE {
+	background: blue;
+	color: white;
+}
+
+.ratingNA input[id="RATINGVALUESDISNA"]:checked ~ label, .NACHANGE {
+	background: blue;
+	color: white;
+}
+
+.ratingNA input[id="RATINGVALUESOPSNA"]:checked ~ label, .NACHANGE {
+	background: blue;
+	color: white;
+}
+
+.ratingNA input[id="RATINGVALUESPHANA"]:checked ~ label, .NACHANGE {
+	background: blue;
+	color: white;
+}
+
+.ratingNA input[id="RATINGVALUESLABNA"]:checked ~ label, .NACHANGE {
+	background: blue;
+	color: white;
+}
+
+.ratingNA input[id="RATINGVALUESCANNA"]:checked ~ label, .NACHANGE {
+	background: blue;
+	color: white;
+}
+
+.ratingNA input[id="RATINGVALUESINSNA"]:checked ~ label, .NACHANGE {
+	background: blue;
+	color: white;
+}
